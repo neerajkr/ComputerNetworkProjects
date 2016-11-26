@@ -1,0 +1,34 @@
+CS425 Assignment 1: Server and Client Communication (Socket Programming)
+---------------------------------------------------------------------------
+Submitted By: Neeraj Kumar, Roll-13427
+---------------------------------------
+
+Files:
+1. server.cpp
+2. client.cpp
+3. Makefile
+
+------------------------
+File Description:
+
+1. server.cpp is coded in c++ language which is for server side of communication
+2. client.cpp is for client side
+3. Makefile is to compile both files together
+
+-------------------------------------------------
+Steps to run the program:
+
+1. For compiling the server.cpp and client.cpp, type make on command line. It will compile both the files
+2. Then, run server by typing ./server port e.g. ./server 65000 on command line
+3. open a new terminal and run client by typing ./client localhost port e.g. ./client localhost 65000
+4. A welcome msg will come and will ask for file name to open.
+5. Type the file name. If file name is valid then it will print the content on terminal window.
+6. If file name is invalid then, it will write- no such file exists & for empty file it will again show a msg saying file is empty
+7. After the first file, client will again ask for file name and again will do the same.
+8. If you cut the client terminal, and again open with same port, it will again connected with server and will do the same as above
+9. Both client and server is running in infinite loop as given in the assignment
+10. checked with two system as well, was running fine
+
+Note: Server also shows the filename which i want 
+
+
